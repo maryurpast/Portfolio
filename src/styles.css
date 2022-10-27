@@ -1,0 +1,140 @@
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #fff;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  margin: 100px auto;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-size: 96px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+.links {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.homepage-link {
+  margin: 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 20px 15px;
+  transition: all 200ms ease-in-out;
+}
+
+.primary-link {
+  border: 1px solid var(--primary-color);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+}
+
+.primary-link:hover {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.secondary-link {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.secondary-link:hover {
+  border: 1px solid var(--primary-color);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+}
+
+.about-me {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 30px;
+  text-align: center;
+}
+
+#contact a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 28px;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.img-bg-day {
+  background-color: rgb(95, 151, 225, 0.1);
+}
+
+.img-bg-night {
+  background-color: rgb(10, 20, 38, 0.1);
+}
+
+.img-bg-nature {
+  background-color: #f5f2fe;
+  height: 100%;
+}
+
+@media (max-width: 576px) {
+  body {
+    margin: 100px 10px;
+  }
+  h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 22px;
+    opacity: 0.7;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .img-hide {
+    display: none;
+  }
+
+  img {
+    margin-bottom: 20px;
+  }
+
+  .links {
+    margin: 10px;
+  }
+
+  .hide-row {
+    display: none;
+  }
+
+  .web-page-header {
+    margin-top: -35px;
+  }
+}
