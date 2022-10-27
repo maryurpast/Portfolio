@@ -97,14 +97,27 @@ h3 {
   height: 100%;
 }
 
+@media (max-width: 900px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+}
+
 @media (max-width: 576px) {
   body {
     margin: 100px 10px;
   }
+
   h1 {
     font-size: 36px;
     margin-bottom: 10px;
   }
+
   h2 {
     font-size: 28px;
   }
@@ -118,23 +131,7 @@ h3 {
     text-align: center;
   }
 
-  .img-hide {
-    display: none;
-  }
-
   img {
     margin-bottom: 20px;
-  }
-
-  .links {
-    margin: 10px;
-  }
-
-  .hide-row {
-    display: none;
-  }
-
-  .web-page-header {
-    margin-top: -35px;
   }
 }
