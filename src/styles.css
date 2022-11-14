@@ -1,7 +1,11 @@
 :root {
   --primary-color: #6c63ff;
-  --secondary-color: #fff;
+  --secondary-color: #f9f7fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
 }
 
 .hero h1,
@@ -13,10 +17,13 @@
 
 .hero h1 {
   font-size: 96px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
 }
 
 .hero p {
   font-size: 48px;
+  font-weight: 700;
 }
 
 .hero h2 {
@@ -28,14 +35,14 @@
 .hero {
   padding: 160px 20px 30px;
   margin-bottom: 47px;
-  background-color: #f9f7fe;
+  background-color: var(--secondary-color);
 }
 
-.about-section-content {
-  margin: 30px 70px 30px 0;
+.content {
+  margin: 30px 0;
 }
 
-.about-section {
+.content-container {
   padding: 160px 20px 0;
 }
 
@@ -79,12 +86,22 @@
   box-shadow: var(--box-shadow);
 }
 
-.about-section h1 {
+.content h1 {
   font-size: 56px;
 }
 
-.about-section h2 {
+.content h2 {
   font-size: 18px;
+}
+
+.content h3 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.content p {
+  font-size: 14px;
+  line-height: 2;
 }
 
 #contact a {
@@ -96,27 +113,65 @@
   cursor: pointer;
 }
 
-.img-bg-day {
-  background-color: rgb(95, 151, 225, 0.1);
+footer {
+  margin: 60px 0;
 }
 
-.img-bg-night {
-  background-color: rgb(10, 20, 38, 0.1);
+footer .contact-box {
+  background-color: var(--secondary-color);
+  padding: 40px 120px;
+  margin-bottom: 80px;
+  border-radius: 20px;
 }
 
-.img-bg-nature {
-  background-color: #f5f2fe;
-  height: 100%;
+footer h4 {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 15px;
+}
+
+footer p {
+  font-size: 18px;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+}
+
+footer .email-link:hover {
+  color: var(--primary-color);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  font-size: 18px;
+  border-radius: 50%;
+  padding: 10px 15px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: #fff;
+  background-color: var(--primary-color);
 }
 
 @media (max-width: 992px) {
-  .about-section {
+  .content-container {
     text-align: center;
     padding: 70px 20px 0;
   }
 
-  .about-section-content {
+  .content {
     margin: 20px 0 40px 0;
+  }
+
+  footer .contact-box {
+    padding: 20px 60px;
   }
 }
 
@@ -139,7 +194,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   h2,
   p {
     text-align: center;
@@ -158,5 +213,10 @@
   .hero p {
     text-align: center;
     font-size: 28px;
+  }
+
+  .content p {
+    font-size: 14px;
+    line-height: 1.5;
   }
 }
