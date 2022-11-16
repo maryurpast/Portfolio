@@ -33,7 +33,7 @@ body {
 }
 
 .hero {
-  padding: 160px 20px 30px;
+  padding: 80px 20px 30px;
   margin-bottom: 47px;
   background-color: var(--secondary-color);
 }
@@ -43,7 +43,7 @@ body {
 }
 
 .content-container {
-  padding: 160px 20px 0;
+  padding: 100px 20px 0;
 }
 
 .homepage-links {
@@ -124,7 +124,7 @@ footer .contact-box {
   border-radius: 20px;
 }
 
-footer h4 {
+footer h3 {
   font-size: 48px;
   font-weight: 700;
   font-family: "Playfair Display", serif;
@@ -133,6 +133,10 @@ footer h4 {
 
 footer p {
   font-size: 18px;
+}
+
+footer p.reference {
+  font-size: 14px;
 }
 
 footer .email-link {
@@ -185,10 +189,6 @@ footer .social-links a:hover {
     font-size: 32px;
   }
 
-  .hero {
-    padding: 90px 10px 0;
-  }
-
   .homepage-links {
     margin: 20px 0;
   }
@@ -215,8 +215,63 @@ footer .social-links a:hover {
     font-size: 28px;
   }
 
+  .content h1 {
+    font-size: 42px;
+  }
+
+  .content h3 {
+    font-size: 18px;
+  }
+
   .content p {
     font-size: 14px;
     line-height: 1.5;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 80px 20px 0px;
+    margin-bottom: 20px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .hero h2 {
+    font-size: 16px;
+    opacity: 0.7;
+  }
+
+  .hero p {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .basic-link {
+    font-size: 14px;
+    padding: 10px 10px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .content h1 {
+    font-size: 36px;
+  }
+
+  footer {
+    margin: 0 0 10px 0;
+  }
+
+  footer .email-link {
+    font-size: 18px;
   }
 }
