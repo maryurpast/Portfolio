@@ -164,6 +164,49 @@ footer .social-links a:hover {
   background-color: var(--primary-color);
 }
 
+/*---- grid -----*/
+
+.content-grid {
+  display: grid;
+  max-width: 100vw;
+  margin: 0 auto;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: minmax(300px, 1fr);
+  gap: 50px;
+}
+
+.image-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.image-link:hover {
+  color: var(--primary-color);
+}
+
+.image-box {
+  position: relative;
+}
+
+.image-box .image-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--secondary-color);
+  display: none;
+}
+
+.image-box:hover .image-text {
+  display: block;
+  cursor: pointer;
+}
+
+.image-box:hover .image {
+  opacity: 0.8;
+}
+
 @media (max-width: 992px) {
   .content-container {
     text-align: center;
@@ -226,6 +269,12 @@ footer .social-links a:hover {
   .content p {
     font-size: 14px;
     line-height: 1.5;
+  }
+
+  .content-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: minmax(200px, 1fr);
+    gap: 20px;
   }
 }
 
