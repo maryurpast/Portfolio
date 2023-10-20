@@ -65,7 +65,8 @@ body {
 
 .image-box,
 .img-bg {
-  box-shadow: 0 0 10px 5px var(--secondary-color);
+  border-radius: 4px;
+  box-shadow: 0 0 10px 0px #bdbdbd;
 }
 
 .image-box .image-text {
