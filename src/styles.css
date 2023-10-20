@@ -8,6 +8,8 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/*typography*/
+
 .hero h1,
 .hero h2,
 .hero p {
@@ -45,6 +47,46 @@ body {
 .content-container {
   padding: 100px 20px 0;
 }
+
+/*---- grid -----*/
+
+.content-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+}
+
+/* images */
+
+.image-box {
+  position: relative;
+}
+
+.image-box,
+.img-bg {
+  box-shadow: 0 0 10px 5px var(--secondary-color);
+}
+
+.image-box .image-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--secondary-color);
+  display: none;
+}
+
+.image-box:hover .image-text {
+  display: block;
+  cursor: pointer;
+}
+
+.image-box:hover .image {
+  opacity: 0.8;
+}
+
+/* links */
 
 .homepage-links {
   margin: 40px 0;
@@ -86,6 +128,26 @@ body {
   box-shadow: var(--box-shadow);
 }
 
+#contact a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 28px;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.image-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.image-link:hover {
+  color: var(--primary-color);
+}
+
+/*content*/
+
 .content h1 {
   font-size: 56px;
 }
@@ -104,14 +166,7 @@ body {
   line-height: 2;
 }
 
-#contact a {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 28px;
-  color: var(--primary-color);
-  cursor: pointer;
-}
+/*footer*/
 
 footer {
   margin: 60px 0;
@@ -164,48 +219,7 @@ footer .social-links a:hover {
   background-color: var(--primary-color);
 }
 
-/*---- grid -----*/
-
-.content-grid {
-  display: grid;
-  max-width: 100vw;
-  margin: 0 auto;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-rows: minmax(300px, 1fr);
-  gap: 50px;
-}
-
-.image-link {
-  text-decoration: none;
-  color: #000;
-}
-
-.image-link:hover {
-  color: var(--primary-color);
-}
-
-.image-box {
-  position: relative;
-}
-
-.image-box .image-text {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--secondary-color);
-  display: none;
-}
-
-.image-box:hover .image-text {
-  display: block;
-  cursor: pointer;
-}
-
-.image-box:hover .image {
-  opacity: 0.8;
-}
+/* media queries */
 
 @media (max-width: 992px) {
   .content-container {
